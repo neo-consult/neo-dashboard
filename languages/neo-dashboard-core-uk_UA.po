@@ -1,0 +1,57 @@
+# Ukrainian translation for Neo Dashboard Core
+# Copyright (C) 2025 Neo Dashboard
+# This file is distributed under the same license as the Neo Dashboard package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Neo Dashboard Core 3.0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-27 12:00+0100\n"
+"PO-Revision-Date: 2025-12-27 12:00+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uk_UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "Abmelden"
+msgstr "Вийти"
+
+msgid "Benutzermenü öffnen"
+msgstr "Відкрити меню користувача"
+
+msgid "%s aufklappen/zuklappen"
+msgstr "Розгорнути/згорнути %s"
+
+msgid "Menü öffnen"
+msgstr "Відкрити меню"
+
+msgid "Menü schließen"
+msgstr "Закрити меню"
+
+msgid "Sprache auswählen"
+msgstr "Вибрати мову"
+
+msgid "Schließen"
+msgstr "Закрити"
+
+msgid "Bestätigung"
+msgstr "Підтвердження"
+
+msgid "Bestätigen"
+msgstr "Підтвердити"
+
+msgid "Abbrechen"
+msgstr "Скасувати"
+
+msgid "Theme wechseln (Hell/Dunkel)"
+msgstr "Перемкнути тему (Світла/Темна)"
+
+msgid "Start"
+msgstr "Початок"
+
+msgid "Zu %s"
+msgstr "До %s"
+

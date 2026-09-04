@@ -1,0 +1,128 @@
+/**
+ * Widget-Komponenten Styles
+ * Basis-Styling für alle Widget-Komponenten
+ */
+
+/* Stat-Item */
+.widget-stat-item {
+    padding: 0.5rem 0;
+    gap: 0.75rem;
+}
+
+.widget-stat-grid {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.widget-stat-item .badge {
+    font-size: 0.875rem;
+    padding: 0.35rem 0.65rem;
+    font-weight: 600;
+}
+
+.widget-stat-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 0.5rem;
+    background: var(--bs-light);
+    color: var(--bs-secondary);
+    font-size: 1rem;
+}
+
+html[data-neo-theme="dark"] .widget-stat-icon {
+    background: var(--neo-theme-secondary-bg);
+    color: var(--neo-theme-text);
+}
+
+.widget-stat-label {
+    color: var(--bs-secondary-color, #6c757d);
+}
+
+html[data-neo-theme="dark"] .widget-stat-label {
+    color: var(--neo-theme-text);
+    opacity: 0.85;
+}
+
+.widget-stat-action {
+    line-height: 1;
+    padding: 0.25rem 0.4rem;
+}
+
+.widget-stat-action i {
+    font-size: 1rem;
+}
+
+.widget-action-row {
+    margin-top: 0.25rem;
+}
+
+/* Action-Row */
+.widget-action-row .btn {
+    line-height: 1.2;
+}
+
+/* Action-Button */
+.widget-action-button {
+    margin-top: 0.5rem;
+}
+
+/* Empty-State */
+.widget-empty-state {
+    padding: 2rem 1rem;
+}
+
+.widget-empty-state i {
+    opacity: 0.5;
+}
+
+/* Alert */
+.alert-sm {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.alert-sm i {
+    font-size: 1rem;
+}
+
+/* List-Group für Widgets */
+.widget-list-group .list-group-item {
+    padding: 0.75rem 0;
+    border-left: none;
+    border-right: none;
+}
+
+.widget-list-group .list-group-item:first-child {
+    border-top: none;
+    padding-top: 0.5rem;
+}
+
+.widget-list-group .list-group-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0.5rem;
+}
+
+/* Dark Mode Support */
+html[data-neo-theme="dark"] .widget-stat-item .badge {
+    color: var(--neo-theme-text);
+}
+
+html[data-neo-theme="dark"] .alert-sm {
+    background-color: var(--neo-theme-secondary-bg);
+    border-color: var(--neo-theme-border);
+    color: var(--neo-theme-text);
+}
+
+html[data-neo-theme="dark"] .widget-empty-state {
+    color: var(--neo-theme-text);
+}
+
+html[data-neo-theme="dark"] .widget-empty-state i {
+    color: var(--neo-theme-text);
+    opacity: 0.6;
+}
+

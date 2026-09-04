@@ -1,0 +1,117 @@
+/* ============================================
+   EINHEITLICHE LAYOUT-REGELN FÜR SECTIONS
+   Diese Regeln gelten für alle Plugins, die Sections verwenden
+   ============================================ */
+
+/* Main-Bereich: Einheitliches Padding für alle Bildschirmgrößen */
+body.neo-dashboard-standalone main.col-md-9,
+body.neo-dashboard-standalone main.col-lg-9 {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}
+
+/* Sections: Volle Breite, keine Margins/Padding */
+body.neo-dashboard-standalone main section {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Container-fluid innerhalb von Sections: 
+   Volle Breite, KEIN Padding (Padding kommt vom main) */
+body.neo-dashboard-standalone main section .container-fluid {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Row innerhalb von Sections: 
+   Volle Breite, keine negativen Margins */
+body.neo-dashboard-standalone main section .container-fluid .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* Alle Col-Klassen innerhalb von Sections: 
+   Kein Padding (Padding kommt vom main) */
+body.neo-dashboard-standalone main section .container-fluid .row > [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Cards: Volle Breite ihrer Container */
+body.neo-dashboard-standalone main section .card {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Responsive: Weniger Padding auf kleineren Bildschirmen */
+@media (max-width: 991px) {
+    body.neo-dashboard-standalone main.col-md-9,
+    body.neo-dashboard-standalone main.col-lg-9 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
+@media (max-width: 767px) {
+    body.neo-dashboard-standalone main.col-md-9,
+    body.neo-dashboard-standalone main.col-lg-9 {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+}
+
+/* Sidebar schmaler machen, damit mehr Platz für Content ist */
+@media (min-width: 768px) {
+    body.neo-dashboard-standalone .desktop-sidebar.col-md-3,
+    body.neo-dashboard-standalone .desktop-sidebar.col-lg-3 {
+        flex: 0 0 200px !important;
+        max-width: 200px !important;
+    }
+    
+    body.neo-dashboard-standalone main.col-md-9,
+    body.neo-dashboard-standalone main.col-lg-9 {
+        flex: 0 0 calc(100% - 200px) !important;
+        max-width: calc(100% - 200px) !important;
+    }
+}
+
+@media (min-width: 992px) {
+    body.neo-dashboard-standalone .desktop-sidebar.col-md-3,
+    body.neo-dashboard-standalone .desktop-sidebar.col-lg-3 {
+        flex: 0 0 200px !important;
+        max-width: 200px !important;
+    }
+    
+    body.neo-dashboard-standalone main.col-md-9,
+    body.neo-dashboard-standalone main.col-lg-9 {
+        flex: 0 0 calc(100% - 200px) !important;
+        max-width: calc(100% - 200px) !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    body.neo-dashboard-standalone .desktop-sidebar.col-md-3,
+    body.neo-dashboard-standalone .desktop-sidebar.col-lg-3 {
+        flex: 0 0 220px !important;
+        max-width: 220px !important;
+    }
+    
+    body.neo-dashboard-standalone main.col-md-9,
+    body.neo-dashboard-standalone main.col-lg-9 {
+        flex: 0 0 calc(100% - 220px) !important;
+        max-width: calc(100% - 220px) !important;
+    }
+}
+

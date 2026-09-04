@@ -1,0 +1,372 @@
+:root {
+    --neo-theme-bg: #ffffff;
+    --neo-theme-text: #212529;
+    --neo-theme-primary: #007cba;
+    --neo-theme-secondary-bg: #f8f9fa;
+    --neo-theme-border: #dee2e6;
+    --neo-theme-accent: #e9ecef;
+}
+
+html[data-neo-theme="dark"] {
+    --neo-theme-bg: #1e1e1e !important;
+    --neo-theme-text: #f0f0f0 !important;
+    --neo-theme-primary: #0ea5e9 !important;
+    --neo-theme-secondary-bg: #2a2a2a !important;
+    --neo-theme-border: #404040 !important;
+    --neo-theme-accent: #3f3f3f !important;
+}
+
+.neo-dashboard-standalone,
+.neo-dashboard-standalone body {
+    background-color: var(--neo-theme-bg) !important;
+    color: var(--neo-theme-text) !important;
+}
+
+.neo-dashboard-standalone .container-fluid,
+.neo-dashboard-standalone main {
+    background-color: var(--neo-theme-bg) !important;
+}
+
+.neo-dashboard-standalone .navbar,
+.neo-dashboard-standalone .navbar.bg-light {
+    background-color: var(--neo-theme-secondary-bg) !important;
+    border-bottom: 1px solid var(--neo-theme-border) !important;
+}
+
+.neo-dashboard-standalone .navbar .navbar-brand,
+.neo-dashboard-standalone .navbar .nav-link,
+.neo-dashboard-standalone .navbar span,
+.neo-dashboard-standalone .navbar .navbar-toggler-icon,
+.neo-dashboard-standalone .sidebar-nav-link {
+    color: var(--neo-theme-text) !important;
+}
+
+/* User Menu Role Text in White Mode */
+.neo-dashboard-standalone .user-menu-toggle small.text-muted,
+.neo-dashboard-standalone .user-menu-toggle small.text-muted.d-block,
+.neo-dashboard-standalone .dropdown .user-menu-toggle small.text-muted,
+.neo-dashboard-standalone .navbar .user-menu-toggle small.text-muted {
+    color: #6c757d !important; /* Dunkelgrau im White Mode */
+}
+
+/* User Menu Role Text in Dark Mode */
+html[data-neo-theme="dark"] .neo-dashboard-standalone .dropdown .text-muted,
+html[data-neo-theme="dark"] .neo-dashboard-standalone .offcanvas .text-muted,
+html[data-neo-theme="dark"] .neo-dashboard-standalone .dropdown small.text-muted,
+html[data-neo-theme="dark"] .neo-dashboard-standalone .offcanvas small.text-muted,
+html[data-neo-theme="dark"] .neo-dashboard-standalone .dropdown a.text-white .text-muted,
+html[data-neo-theme="dark"] .neo-dashboard-standalone .offcanvas a.text-white .text-muted,
+html[data-neo-theme="dark"] .neo-dashboard-standalone .dropdown a.text-white small.text-muted,
+html[data-neo-theme="dark"] .neo-dashboard-standalone .offcanvas a.text-white small.text-muted,
+html[data-neo-theme="dark"] .neo-dashboard-standalone .user-menu-toggle small.text-muted {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.neo-dashboard-standalone .navbar .navbar-toggler {
+    border-color: var(--neo-theme-text) !important;
+}
+
+.neo-dashboard-standalone .nav-link:hover,
+.neo-dashboard-standalone .sidebar-nav-link:hover {
+    background-color: var(--neo-theme-accent) !important;
+    color: var(--neo-theme-primary) !important;
+}
+
+.neo-dashboard-standalone .card {
+    background-color: var(--neo-theme-secondary-bg) !important;
+    border-color: var(--neo-theme-border) !important;
+    color: var(--neo-theme-text) !important;
+}
+
+.neo-dashboard-standalone .desktop-sidebar,
+.neo-dashboard-standalone .offcanvas {
+    background-color: var(--neo-theme-secondary-bg) !important;
+    border-color: var(--neo-theme-border) !important;
+}
+
+/* Sidebar navigation text colors */
+.neo-dashboard-standalone .desktop-sidebar .nav-link,
+.neo-dashboard-standalone .offcanvas .nav-link {
+    color: var(--neo-theme-text) !important;
+}
+
+.neo-dashboard-standalone .desktop-sidebar .nav-link:hover,
+.neo-dashboard-standalone .offcanvas .nav-link:hover {
+    background-color: var(--neo-theme-accent) !important;
+    color: var(--neo-theme-primary) !important;
+}
+
+.neo-dashboard-standalone .desktop-sidebar .nav-link.active,
+.neo-dashboard-standalone .offcanvas .nav-link.active {
+    background-color: var(--neo-theme-primary) !important;
+    color: white !important;
+}
+
+/* Bootstrap button theming */
+.neo-dashboard-standalone .btn-primary {
+    background-color: var(--neo-theme-primary) !important;
+    border-color: var(--neo-theme-primary) !important;
+}
+
+.neo-dashboard-standalone .btn-outline-primary {
+    color: var(--neo-theme-primary) !important;
+    border-color: var(--neo-theme-primary) !important;
+    background-color: transparent !important;
+}
+
+.neo-dashboard-standalone .btn-outline-primary:hover,
+.neo-dashboard-standalone .btn-outline-primary:focus,
+.neo-dashboard-standalone .btn-outline-primary:active,
+.neo-dashboard-standalone .btn-outline-primary.active {
+    background-color: var(--neo-theme-primary) !important;
+    border-color: var(--neo-theme-primary) !important;
+    color: #ffffff !important;
+}
+
+.neo-dashboard-standalone .btn-secondary {
+    background-color: var(--neo-theme-accent) !important;
+    border-color: var(--neo-theme-border) !important;
+    color: var(--neo-theme-text) !important;
+}
+
+.neo-dashboard-standalone .btn-outline-secondary {
+    color: var(--neo-theme-text) !important;
+    border-color: var(--neo-theme-border) !important;
+}
+
+.neo-dashboard-standalone .btn-outline-secondary:hover {
+    background-color: var(--neo-theme-accent) !important;
+    border-color: var(--neo-theme-border) !important;
+    color: var(--neo-theme-text) !important;
+}
+
+/* Tooltips in Dark Mode */
+.neo-dashboard-standalone .tooltip-inner {
+    background-color: var(--neo-theme-secondary-bg) !important;
+    color: var(--neo-theme-text) !important;
+    border: 1px solid var(--neo-theme-border) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.neo-dashboard-standalone .tooltip.bs-tooltip-top .tooltip-arrow::before,
+.neo-dashboard-standalone .tooltip.bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before {
+    border-top-color: var(--neo-theme-secondary-bg) !important;
+}
+
+.neo-dashboard-standalone .tooltip.bs-tooltip-bottom .tooltip-arrow::before,
+.neo-dashboard-standalone .tooltip.bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before {
+    border-bottom-color: var(--neo-theme-secondary-bg) !important;
+}
+
+.neo-dashboard-standalone .tooltip.bs-tooltip-start .tooltip-arrow::before,
+.neo-dashboard-standalone .tooltip.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before {
+    border-left-color: var(--neo-theme-secondary-bg) !important;
+}
+
+.neo-dashboard-standalone .tooltip.bs-tooltip-end .tooltip-arrow::before,
+.neo-dashboard-standalone .tooltip.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before {
+    border-right-color: var(--neo-theme-secondary-bg) !important;
+}
+
+/* Form controls */
+.neo-dashboard-standalone .form-control,
+.neo-dashboard-standalone .form-select {
+    background-color: var(--neo-theme-bg) !important;
+    border-color: var(--neo-theme-border) !important;
+    color: var(--neo-theme-text) !important;
+}
+
+.neo-dashboard-standalone .form-control:focus,
+.neo-dashboard-standalone .form-select:focus {
+    background-color: var(--neo-theme-bg) !important;
+    border-color: var(--neo-theme-primary) !important;
+    color: var(--neo-theme-text) !important;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25) !important;
+}
+
+/* Modal theming */
+.neo-dashboard-standalone .modal-content {
+    background-color: var(--neo-theme-bg) !important;
+    color: var(--neo-theme-text) !important;
+    border-color: var(--neo-theme-border) !important;
+}
+
+.neo-dashboard-standalone .modal-header {
+    border-bottom-color: var(--neo-theme-border) !important;
+}
+
+.neo-dashboard-standalone .modal-footer {
+    border-top-color: var(--neo-theme-border) !important;
+}
+
+/* Close button for dark theme */
+html[data-neo-theme="dark"] .neo-dashboard-standalone .btn-close {
+    filter: invert(1);
+}
+
+/* Alert theming */
+.neo-dashboard-standalone .alert {
+    border-color: var(--neo-theme-border) !important;
+}
+
+.neo-dashboard-standalone .alert-info {
+    background-color: rgba(13, 202, 240, 0.1) !important;
+    color: var(--neo-theme-text) !important;
+}
+
+.neo-dashboard-standalone .alert-success {
+    background-color: rgba(25, 135, 84, 0.1) !important;
+    color: var(--neo-theme-text) !important;
+}
+
+.neo-dashboard-standalone .alert-warning {
+    background-color: rgba(255, 193, 7, 0.1) !important;
+    color: var(--neo-theme-text) !important;
+}
+
+.neo-dashboard-standalone .alert-danger {
+    background-color: rgba(220, 53, 69, 0.1) !important;
+    color: var(--neo-theme-text) !important;
+}
+
+/* General text and heading colors */
+.neo-dashboard-standalone h1,
+.neo-dashboard-standalone h2,
+.neo-dashboard-standalone h3,
+.neo-dashboard-standalone h4,
+.neo-dashboard-standalone h5,
+.neo-dashboard-standalone h6,
+.neo-dashboard-standalone p,
+.neo-dashboard-standalone span,
+.neo-dashboard-standalone div,
+.neo-dashboard-standalone label {
+    color: var(--neo-theme-text) !important;
+}
+
+/* Card headers and footers */
+.neo-dashboard-standalone .card-header,
+.neo-dashboard-standalone .card-footer {
+    background-color: var(--neo-theme-accent) !important;
+    border-color: var(--neo-theme-border) !important;
+    color: var(--neo-theme-text) !important;
+}
+
+/* Table theming */
+.neo-dashboard-standalone .table {
+    color: var(--neo-theme-text) !important;
+}
+
+.neo-dashboard-standalone .table th,
+.neo-dashboard-standalone .table td {
+    border-color: var(--neo-theme-border) !important;
+}
+
+.neo-dashboard-standalone .table-striped > tbody > tr:nth-of-type(odd) > td,
+.neo-dashboard-standalone .table-striped > tbody > tr:nth-of-type(odd) > th {
+    background-color: var(--neo-theme-accent) !important;
+}
+
+/* Container fluid should have no background */
+.neo-dashboard-standalone .container-fluid {
+    background: none !important;
+    background-color: transparent !important;
+}
+
+/* Theme toggle button styles */
+.neo-dashboard-standalone #theme-toggle-navbar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--neo-theme-text);
+    background: var(--neo-theme-secondary-bg);
+    color: var(--neo-theme-text);
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.neo-dashboard-standalone #theme-toggle-navbar:hover {
+    transform: scale(1.05);
+    background: var(--neo-theme-primary);
+    color: white;
+}
+
+/* Language switcher button styles */
+.neo-dashboard-standalone #language-toggle-navbar {
+    width: auto;
+    min-width: 60px;
+    height: 40px;
+    border-radius: 0.375rem;
+    border: 1px solid var(--neo-theme-text);
+    background: var(--neo-theme-secondary-bg);
+    color: var(--neo-theme-text);
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.375rem 0.75rem;
+}
+
+.neo-dashboard-standalone #language-toggle-navbar:hover {
+    transform: scale(1.05);
+    background: var(--neo-theme-primary);
+    color: white;
+    border-color: var(--neo-theme-primary);
+}
+
+.neo-dashboard-standalone #language-toggle-navbar:focus {
+    box-shadow: 0 0 0 0.25rem rgba(14, 165, 233, 0.25);
+}
+
+/* Language dropdown */
+.neo-dashboard-standalone #language-dropdown {
+    min-width: 180px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.neo-dashboard-standalone #language-dropdown .dropdown-item {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.neo-dashboard-standalone #language-dropdown .dropdown-item:hover {
+    background-color: var(--neo-theme-secondary-bg);
+}
+
+.neo-dashboard-standalone #language-dropdown .dropdown-item.active {
+    background-color: var(--neo-theme-primary);
+    color: white;
+}
+
+.neo-dashboard-standalone #language-dropdown .dropdown-item.active:hover {
+    background-color: var(--neo-theme-primary);
+    opacity: 0.9;
+}
+
+/* Dark Mode: Language Switcher */
+html[data-neo-theme="dark"] .neo-dashboard-standalone #language-toggle-navbar {
+    border-color: var(--neo-theme-border);
+    background: var(--neo-theme-secondary-bg);
+    color: var(--neo-theme-text);
+}
+
+html[data-neo-theme="dark"] .neo-dashboard-standalone #language-toggle-navbar:hover {
+    background: var(--neo-theme-primary);
+    border-color: var(--neo-theme-primary);
+    color: white;
+}
+
+html[data-neo-theme="dark"] .neo-dashboard-standalone #language-dropdown {
+    background-color: var(--neo-theme-bg);
+    border-color: var(--neo-theme-border);
+}
+
+html[data-neo-theme="dark"] .neo-dashboard-standalone #language-dropdown .dropdown-item {
+    color: var(--neo-theme-text);
+}
+
+html[data-neo-theme="dark"] .neo-dashboard-standalone #language-dropdown .dropdown-item:hover {
+    background-color: var(--neo-theme-secondary-bg);
+    color: var(--neo-theme-text);
+}

@@ -1,0 +1,57 @@
+# English translation for Neo Dashboard Core
+# Copyright (C) 2025 Neo Dashboard
+# This file is distributed under the same license as the Neo Dashboard package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Neo Dashboard Core 3.0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-27 12:00+0100\n"
+"PO-Revision-Date: 2025-12-27 12:00+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Abmelden"
+msgstr "Logout"
+
+msgid "Benutzermenü öffnen"
+msgstr "Open user menu"
+
+msgid "%s aufklappen/zuklappen"
+msgstr "Expand/collapse %s"
+
+msgid "Menü öffnen"
+msgstr "Open menu"
+
+msgid "Menü schließen"
+msgstr "Close menu"
+
+msgid "Sprache auswählen"
+msgstr "Select language"
+
+msgid "Schließen"
+msgstr "Close"
+
+msgid "Bestätigung"
+msgstr "Confirmation"
+
+msgid "Bestätigen"
+msgstr "Confirm"
+
+msgid "Abbrechen"
+msgstr "Cancel"
+
+msgid "Theme wechseln (Hell/Dunkel)"
+msgstr "Switch theme (Light/Dark)"
+
+msgid "Start"
+msgstr "Start"
+
+msgid "Zu %s"
+msgstr "To %s"
+

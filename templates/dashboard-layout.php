@@ -1,0 +1,27 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+?>
+
+<?php include __DIR__ . '/partials/navbar.php'; ?>
+<?php include __DIR__ . '/partials/offcanvas-sidebar.php'; ?>
+
+<div class="container-fluid">
+    <div class="row">
+        <?php include __DIR__ . '/partials/desktop-sidebar.php'; ?>
+
+        <main class="col-12 col-md-9 col-lg-9 px-md-4 py-4 main-content-tablet">
+            <?php // Notifications jetzt immer anzeigen ?>
+            <?php include __DIR__ . '/partials/notifications.php'; ?>
+
+            <?php if ( $section_not_found ) : ?>
+                <?php include __DIR__ . '/section-not-found.php'; ?>
+            <?php elseif ( $active_section ) : ?>
+                <?php include __DIR__ . '/partials/sections.php'; ?>
+            <?php else : ?>
+                <?php include __DIR__ . '/partials/widgets.php'; ?>
+            <?php endif; ?>
+        </main>
+    </div>
+</div>

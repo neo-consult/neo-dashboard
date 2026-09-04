@@ -1,0 +1,3 @@
+/coverage/
+/.phpunit.result.cache
+/vendor/
